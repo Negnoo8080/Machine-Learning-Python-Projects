@@ -1,13 +1,15 @@
-# Project 8: Hierarchical Clustering and Agglomerative Data Analysis
+# Project 8: Hierarchical Agglomerative Clustering
 
-## Overview
-This project explores unsupervised learning topologies using **Hierarchical Agglomerative Clustering**. The primary objective is to evaluate data point proximity, compute structural linkages, and generate visual taxonomies to discover inherent natural groupings within multidimensional feature spaces without predefined cluster counts.
+## What this project does
+This project explores another Unsupervised Learning technique: Hierarchical Clustering. The goal is to see how data points group together step-by-step based on their distance from each other.
 
-## Key Features & Implementations
-* **Agglomerative Linkage Computation:** Implemented proximity matrix evaluations utilizing Scikit-Learn and SciPy's `linkage` algorithms to calculate step-by-step variance and cluster merging criteria.
-* **Dendrogram Visualization:** Constructed tree-based **Dendrogram** visualizations to map out the complete hierarchy of merges, allowing for intuitive, mathematical assessment of the optimal number of clusters based on distance thresholds.
-* **Exploratory Cluster Evaluation:** Analyzed data distribution and similarity distance metrics to extract meaningful profiles from continuous feature variables.
+## What I did:
+* Calculated cluster linkages using SciPy's clustering library.
+* Generated and customized a **Dendrogram** (tree diagram) plot using Matplotlib.
+* Used the tree diagram to visualize the hierarchy of merges and understand how data points naturally group together at different distance levels.
 
-## Technologies Used
-* **Language:** Python
-* **Libraries:** SciPy, Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn
+## Libraries used:
+* SciPy
+* Scikit-Learn
+* Pandas & NumPy
+* Matplotlib

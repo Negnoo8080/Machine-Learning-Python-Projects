@@ -1,14 +1,15 @@
-# Project 7: Unsupervised Clustering on Iris Dataset using K-Means
+# Project 7: Unsupervised Clustering using K-Means
 
-## Overview
-This project implements an unsupervised machine learning workflow utilizing the **K-Means Clustering** algorithm on the classic Iris dataset. The primary objective is to partition unlabeled multidimensional biological data into distinct structural groupings and evaluate the mathematical mapping against real categorical classifications.
+## What this project does
+This exercise covers fundamental Unsupervised Learning. Using the classic Iris dataset, we tried to group the flowers into clusters without using their actual class labels during training.
 
-## Key Features & Implementations
-* **Optimal Cluster Determination (The Elbow Method):** Implemented a Within-Cluster Sum of Squares (WCSS) inertia loop across multiple cluster counts ($K$) to graphically identify the "elbow" point, mathematically justifying the selection of 3 optimal clusters.
-* **Unsupervised Clustering Pipeline:** Structured and deployed a `KMeans` estimator via Scikit-Learn to compute multi-feature cluster centers and assign discrete spatial labels to unstructured continuous features.
-* **Clustering Evaluation & Alignment:** Built a customized cross-tabulation and confusion matrix structure to align unsupervised cluster index outputs with the dataset's ground-truth target features, assessing clustering purity and spatial segregation.
+## What I did:
+* Implemented a loop to calculate the Within-Cluster Sum of Squares (WCSS) inertia.
+* Plotted the **Elbow Method** graph to visually and mathematically choose the optimal number of clusters ($K=3$).
+* Trained a **K-Means Clustering** model to group the data into 3 distinct segments.
+* Built a cross-tabulation table to compare our unsupervised cluster groups against the real flower labels to check performance.
 
-## Technologies Used
-* **Language:** Python
-* **Libraries:** Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn
-* **Dataset:** Iris Flower Dataset
+## Libraries used:
+* Scikit-Learn
+* Pandas & NumPy
+* Matplotlib & Seaborn

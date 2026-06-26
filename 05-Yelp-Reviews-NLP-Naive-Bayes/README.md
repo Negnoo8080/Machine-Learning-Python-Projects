@@ -1,17 +1,16 @@
-# Project 5: Text Classification and Sentiment Analysis on Yelp Reviews using Naïve Bayes
+# Project 5: Yelp Review Sentiment Classification using Naïve Bayes
 
-## Overview
-This project implements an end-to-end Natural Language Processing (NLP) and supervised machine learning pipeline to analyze and predict user ratings (star counts) from Yelp review texts. It showcases advanced text vectorization, binary vs. multi-class classification evaluation, and model deployment serialization.
+## What this project does
+This exercise focuses on basic Natural Language Processing (NLP) and Text Classification. We used a dataset of Yelp reviews to predict the number of stars a user gave based on their text comment.
 
-## Key Features & Implementations
-* **Text Vectorization & Feature Extraction:** Utilized `CountVectorizer` from Scikit-Learn to perform textual tokenization and structured a feature matrix ($X$) from raw review strings using `fit_transform`.
-* **Supervised Learning Pipeline:** Implemented and trained a **Multinomial Naïve Bayes (MultinomialNB)** classifier, specialized for discrete word-count feature frequencies.
-* **Comparative Classification Analysis:** 
-  * Evaluated baseline classification performance across all multi-class star ratings (1 to 5 stars).
-  * Filtered the dataset to focus strictly on extreme sentiment profiles (1-star vs. 5-star reviews), significantly improving classification metrics by training on highly separated classes.
-* **Model Serialization (Deployment Ready):** Implemented Python's `pickle` library to serialize and bundle the pipeline components (both the fitted vectorizer and trained model structures) into a production-ready `.pkl` package for downstream integration.
+## What I did:
+* Used Scikit-Learn's `CountVectorizer` to convert text reviews into numbers (word counts) that a model can understand.
+* Split the data into training and testing sets.
+* Trained a **Multinomial Naïve Bayes** model to classify star ratings.
+* Filtered the dataset to compare extreme classes (only 1-star and 5-star reviews) and saw how the model's accuracy improved.
+* Used Python's `pickle` library to save the trained model and the vectorizer into a `.pkl` file for future use.
 
-## Technologies Used
-* **Language:** Python
-* **Libraries:** Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn, Pickle
-* **Dataset:** Yelp Reviews Dataset
+## Libraries used:
+* Scikit-Learn
+* Pandas & NumPy
+* Pickle

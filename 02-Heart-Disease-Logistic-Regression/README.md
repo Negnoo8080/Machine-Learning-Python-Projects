@@ -1,14 +1,15 @@
-# Project 2: Heart Disease Classification using Logistic Regression
+# Project 2: Heart Disease Prediction using Logistic Regression
 
-## Overview
-This project focuses on building a predictive model to determine the 10-year risk of coronary heart disease (CHD) in patients based on clinical and behavioral measurements from the Framingham dataset. It implements a complete supervised learning workflow using Logistic Regression to handle a binary classification task.
+## What this project does
+This project is a simple binary classification exercise. The goal is to predict whether a patient has a 10-year risk of coronary heart disease based on their medical background.
 
-## Key Features & Implementations
-* **Data Profiling & Structure Evaluation:** Conducted data inspection using `df.info()` and `df.head()` to assess missing values and statistical properties across 16 columns (such as blood pressure, BMI, glucose, and smoking habits).
-* **Supervised Learning Model:** Implemented and trained a **Logistic Regression** classifier using Scikit-Learn to handle continuous and categorical feature spaces.
-* **Model Evaluation:** Evaluated binary classification accuracy and model interpretability for specific medical records.
+## What I did:
+* Loaded and explored the Framingham heart disease dataset.
+* Checked the columns (like age, blood pressure, BMI, and glucose levels) for any missing data.
+* Trained a basic **Logistic Regression** model using Scikit-Learn to classify the outcomes.
+* Looked at the evaluation metrics to see how well the model predicts heart disease risk.
 
-## Technologies Used
-* **Language:** Python
-* **Libraries:** Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn
-* **Dataset:** Framingham Heart Disease Dataset
+## Libraries used:
+* Scikit-Learn
+* Pandas & NumPy
+* Matplotlib & Seaborn

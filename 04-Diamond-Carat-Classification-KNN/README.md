@@ -1,15 +1,16 @@
-# Project 4: Diamond Carat Range Classification using K-Nearest Neighbors (KNN)
+# Project 4: Diamond Carat Range Classification using KNN
 
-## Overview
-This project implements a supervised machine learning pipeline using the K-Nearest Neighbors (KNN) algorithm to classify diamonds into specific weight (carat) ranges based on their physical measurements and quality characteristics. It showcases data transformation, categorical encoding, and feature optimization.
+## What this project does
+This project applies the K-Nearest Neighbors (KNN) algorithm to the `diamonds` dataset. Instead of predicting prices, the task is to classify diamonds into different carat ranges.
 
-## Key Features & Implementations
-* **Data Transformation & Feature Engineering:** Cleaned the feature space by dropping non-contributing dimensions and engineered a continuous target variable (`carat`) into distinct, discrete categorical ranges ('0-1', '1-2', '2-3', etc.).
-* **Categorical Data Encoding:** Converted categorical diamond characteristics like `cut` attributes into optimized integer structures for machine learning compatibility.
-* **Supervised KNN Pipeline:** Implemented a **K-Nearest Neighbors Classifier** using Scikit-Learn, splitting the multi-feature space to optimize localized classification performance.
-* **Hyperparameter Tuning & Diagnostics:** Constructed an error-rate analysis across different values of $K$ to mathematically determine the optimal neighbor threshold for maximum testing accuracy.
+## What I did:
+* Cleaned up the data by dropping columns that weren't needed (like Color and Clarity).
+* Converted the `cut` feature values into integers.
+* Grouped the continuous `carat` values into discrete bins/ranges (like '0-1', '1-2', etc.) to create our target labels.
+* Trained a **K-Nearest Neighbors Classifier**.
+* Plotted a diagram of error rates across different values of $K$ to see which neighbor setting gives the highest accuracy.
 
-## Technologies Used
-* **Language:** Python
-* **Libraries:** Scikit-Learn, Pandas, NumPy, Matplotlib
-* **Dataset:** Diamonds Dataset
+## Libraries used:
+* Scikit-Learn
+* Pandas & NumPy
+* Matplotlib
